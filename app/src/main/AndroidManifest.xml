@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="MissingClass">
-        <activity android:name=".Roomdata.Viewdata"></activity>
+        <activity android:name=".profile"></activity>
+        <activity android:name=".login2" />
+        <activity android:name=".Roomdata.Viewdata" />
         <activity android:name=".Roomdata.RoomData" />
         <activity android:name=".Roomdata.Tambahdata" />
         <activity android:name=".sharedprefence" />

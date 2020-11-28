@@ -1,4 +1,4 @@
-gpackage com.mobile.praktekmp2.Roomdata;
+package com.mobile.praktekmp2.Roomdata;
 
 import android.content.Context;
 import android.view.LayoutInflater;

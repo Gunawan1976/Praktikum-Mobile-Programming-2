@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.mobile.praktekmp2.Roomdata.RoomData;
 
 public class MainActivity extends AppCompatActivity {
-    Button button1,button2,button3,button4;
+    Button button1,button2,button3,button4,button5;
 
 
     @Override
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
         button3 = findViewById(R.id.button3);
         button4 = findViewById(R.id.button4);
+        button5 = findViewById(R.id.button5);
     }
     @Override
     protected void onResume(){
@@ -55,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent d = new Intent(getApplicationContext(), RoomData.class);
                 startActivity(d);
+            }
+        });
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent e= new Intent(getApplicationContext(), login2.class);
+                startActivity(e);
             }
         });
 

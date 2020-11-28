@@ -4,6 +4,7 @@ import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import com.mobile.praktekmp2.Entity.Mahasiswa;
 
@@ -15,8 +16,13 @@ public interface mahasiswaDAO {
     List<Mahasiswa> getAll();
     @Query("SELECT * FROM mahasiswa WHERE ` namamahasiswa` LIKE :nama ")
     Mahasiswa findByName(String nama);
+
+    @Update
+    void update(Mahasiswa mahasiswa);
     @Insert
-    void insertAll(Mahasiswa... mahasiswa);
+    void insertAll(Mahasiswa mahasiswa);
     @Delete
-    public void deleteUsers(Mahasiswa... users);
+    void delete(Mahasiswa mahasiswa);
+
+
 }

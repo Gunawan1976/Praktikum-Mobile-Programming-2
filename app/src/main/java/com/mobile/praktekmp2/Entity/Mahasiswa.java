@@ -7,13 +7,24 @@ import androidx.room.PrimaryKey;
 @Entity
 public class Mahasiswa {
     @PrimaryKey(autoGenerate = true)
-    int id;
+    int id = 0;
     @ColumnInfo(name = " namamahasiswa")
     String namamahasiswa;
     @ColumnInfo(name = " NIM ")
     String NIM;
     @ColumnInfo(name = " jurusan ")
     String jurusan;
+
+    public Mahasiswa (int id,String namamahasiswa,String NIM,String jurusan){
+        this.id = id;
+        this.namamahasiswa = namamahasiswa;
+        this.NIM = NIM;
+        this.jurusan = jurusan;
+    }
+
+    public Mahasiswa() {
+
+    }
 
     public int getId(){return id;}
     public void setId(int id){this.id=id;}
