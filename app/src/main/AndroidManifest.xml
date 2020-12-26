@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="MissingClass">
-        <activity android:name=".profile"></activity>
+        <activity android:name=".timerr"></activity>
+        <activity android:name=".timer" />
+        <activity android:name=".Roomdata.crud_main" />
+        <activity android:name=".profile" />
         <activity android:name=".login2" />
         <activity android:name=".Roomdata.Viewdata" />
         <activity android:name=".Roomdata.RoomData" />
@@ -27,6 +30,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".timerservice"
+            android:enabled="true" />
     </application>
 
 </manifest>

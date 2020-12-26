@@ -8,18 +8,21 @@ import androidx.room.PrimaryKey;
 public class Mahasiswa {
     @PrimaryKey(autoGenerate = true)
     int id = 0;
-    @ColumnInfo(name = " namamahasiswa")
+    @ColumnInfo(name = "namamahasiswa")
     String namamahasiswa;
-    @ColumnInfo(name = " NIM ")
+    @ColumnInfo(name = "NIM")
     String NIM;
-    @ColumnInfo(name = " jurusan ")
+    @ColumnInfo(name = "jurusan")
     String jurusan;
+    @ColumnInfo(name = "gambar")
+    String gambar;
 
     public Mahasiswa (int id,String namamahasiswa,String NIM,String jurusan){
         this.id = id;
         this.namamahasiswa = namamahasiswa;
         this.NIM = NIM;
         this.jurusan = jurusan;
+        this.gambar = gambar;
     }
 
     public Mahasiswa() {
@@ -35,4 +38,11 @@ public class Mahasiswa {
     public String getJurusan(){return jurusan;}
     public void setJurusan(String jurusan){this.jurusan=jurusan;}
 
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
+    }
 }

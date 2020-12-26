@@ -8,9 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.mobile.praktekmp2.Roomdata.RoomData;
+import com.mobile.praktekmp2.Roomdata.crud_main;
 
 public class MainActivity extends AppCompatActivity {
-    Button button1,button2,button3,button4,button5;
+    Button button1,button2,button3,button4,button5,button6,button7;
 
 
     @Override
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         button3 = findViewById(R.id.button3);
         button4 = findViewById(R.id.button4);
         button5 = findViewById(R.id.button5);
+        button6 = findViewById(R.id.crudbut);
+        button7 = findViewById(R.id.timerbut);
     }
     @Override
     protected void onResume(){
@@ -65,6 +68,19 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(e);
             }
         });
-
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent f=new Intent(getApplicationContext(), crud_main.class);
+                startActivity(f);
+            }
+        });
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent g = new Intent(getApplicationContext(),timer.class);
+                startActivity(g);
+            }
+        });
     }
 }

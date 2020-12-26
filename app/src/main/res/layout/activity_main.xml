@@ -67,6 +67,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="login" />
+
+        <Button
+            android:id="@+id/crudbut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="crud" />
+
+        <Button
+            android:id="@+id/timerbut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timer Service" />
     </LinearLayout>
 
 

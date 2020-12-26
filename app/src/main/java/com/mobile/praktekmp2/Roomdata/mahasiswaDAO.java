@@ -14,7 +14,7 @@ import java.util.List;
 public interface mahasiswaDAO {
     @Query("SELECT * From Mahasiswa")
     List<Mahasiswa> getAll();
-    @Query("SELECT * FROM mahasiswa WHERE ` namamahasiswa` LIKE :nama ")
+    @Query("SELECT * FROM mahasiswa WHERE namamahasiswa LIKE :nama ")
     Mahasiswa findByName(String nama);
 
     @Update
